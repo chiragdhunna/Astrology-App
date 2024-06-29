@@ -10,11 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="screenshots\registration screen.jpg" alt="Registration Screen"  height="400"> 
-<img src="screenshots\sign screen.jpg" alt="project-screenshot"  height="400"> 
-<img src="screenshots\otp screen.jpg" alt="project-screenshot"  height="400"> 
-<img src="screenshots\details screen.png" alt="project-screenshot" height="400"> 
-<img src="screenshots\home page.png" alt="project-screenshot"  height="400">
+<img src="screenshots\registration screen.jpg" alt="Registration Screen"  height="400"> <img src="screenshots\sign screen.jpg" alt="project-screenshot"  height="400"> <img src="screenshots\otp screen.jpg" alt="project-screenshot"  height="400"> <img src="screenshots\details screen.png" alt="project-screenshot" height="400"> <img src="screenshots\home page.png" alt="project-screenshot"  height="400">
 
 <h2>🧐 Features</h2>
 
