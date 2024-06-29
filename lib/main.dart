@@ -1,7 +1,7 @@
 import 'package:api/screens/astrologer_dashboard.dart';
 import 'package:api/screens/chat_request.dart';
 import 'package:api/screens/chat_request_initiate.dart';
-import 'package:api/screens/chat_screen_new.dart';
+import 'package:api/screens/details_screen.dart';
 import 'package:api/screens/login_screen.dart';
 import 'package:api/screens/main_screen.dart';
 
@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
           statusBarColor: const Color.fromARGB(255, 255, 132, 0),
           statusBarIconBrightness: Brightness.light,
         ),
-        child: const LoginScreen(),
+        child: MainScreen(),
       ),
     );
   }

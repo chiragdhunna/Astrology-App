@@ -256,7 +256,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Image.asset('assets/slider_dots.jpg'),
+            // Image.asset('assets/slider_dots.jpg'),
             const SizedBox(
               height: 30,
             ),
