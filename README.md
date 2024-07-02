@@ -53,21 +53,14 @@ Before you begin, ensure you have the following software installed:
    git clone https://github.com/yourusername/astrology-freelance-project.git
    ```
 
-2. **Navigate to the project directory**:
-   ```sh
-   cd astrology-freelance-project
-   ```
-
-### Frontend Setup:
-
-5. **Install Flutter dependencies**:
+2. **Install Flutter dependencies**:
 
    ```sh
    cd Astrology-App
    flutter pub get
    ```
 
-6. **Run the Flutter app**:
+3. **Run the Flutter app**:
    ```sh
    flutter run
    ```
