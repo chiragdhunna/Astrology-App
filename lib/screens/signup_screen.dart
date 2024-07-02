@@ -2,7 +2,6 @@ import '../api_services/func.dart';
 import '../widgets/useful.dart';
 import 'otp_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -20,8 +19,8 @@ class _SignUpState extends State<SignUp> {
     service.apiCallLogin(emailController.text).then((value) {
       Snacker(value.msg!, _messangerKey, context);
 
-      if (value.status == 200)
-        Future.delayed(Duration(seconds: 3), () {
+      if (value.status == 200) {
+        Future.delayed(const Duration(seconds: 3), () {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) => OTP(
@@ -31,6 +30,7 @@ class _SignUpState extends State<SignUp> {
             ),
           );
         });
+      }
     });
   }
 

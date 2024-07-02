@@ -84,7 +84,7 @@ class MyScaffold extends StatelessWidget {
                       padding: EdgeInsets.only(left: 20.0),
                       child: Icon(Icons.search),
                     ),
-                    label: Row(
+                    label: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
