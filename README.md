@@ -63,7 +63,7 @@ Before you begin, ensure you have the following software installed:
 5. **Install Flutter dependencies**:
 
    ```sh
-   cd ../frontend
+   cd Astrology-App
    flutter pub get
    ```
 
