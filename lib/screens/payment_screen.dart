@@ -119,7 +119,7 @@ class PaymentScreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Row(
+                              const Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [

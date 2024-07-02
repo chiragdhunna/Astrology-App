@@ -1,53 +1,57 @@
-import 'package:api/screens/astrologer_dashboard.dart';
-import 'package:api/screens/chat_request.dart';
-import 'package:api/screens/chat_request_initiate.dart';
-import 'package:api/screens/details_screen.dart';
-import 'package:api/screens/login_screen.dart';
-import 'package:api/screens/main_screen.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'screens/astrologer_dashboard.dart';
+import 'screens/chat_request.dart';
+import 'screens/chat_request_initiate.dart';
+import 'screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/astroDash': (context) => AstroDashboard(),
-        '/chatRequest': (context) => ChatRequestScreen(),
-        '/chatRequestIni': (context) => ChatRequestInitiate(),
+        '/astroDash': (context) => const AstroDashboard(),
+        '/chatRequest': (context) => const ChatRequestScreen(),
+        '/chatRequestIni': (context) => const ChatRequestInitiate(),
       },
       title: 'Flutter Demo',
-      theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: const Color(0xFFFFFFFF),
+      theme: ThemeData(
+        colorScheme: const ColorScheme.light(
+          primary: Color(0xFF6200EE),
+          secondary: Color(0xFF03DAC6),
+          surface: Colors.white,
+          background: Colors.white,
+          error: Color(0xFFB00020),
+        ),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFFFFFFFF),
+          backgroundColor: Colors.white,
           elevation: 0,
         ),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
         ),
-        dropdownMenuTheme: DropdownMenuThemeData(
-          inputDecorationTheme: InputDecorationTheme(
-            border: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: const Color(0xFF181818).withOpacity(0.5),
-              ),
-              borderRadius: BorderRadius.circular(5),
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: const Color(0xFF181818).withOpacity(0.5),
             ),
-            focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(
-                color: Color(0xFF008CD3),
-                width: 1.0,
-              ),
+            borderRadius: const BorderRadius.all(Radius.circular(5.0)),
+          ),
+          focusedBorder: const OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Color(0xFF008CD3),
+              width: 1.0,
             ),
           ),
         ),
@@ -59,7 +63,7 @@ class MyApp extends StatelessWidget {
           statusBarColor: const Color.fromARGB(255, 255, 132, 0),
           statusBarIconBrightness: Brightness.light,
         ),
-        child: MainScreen(),
+        child: const MainScreen(),
       ),
     );
   }

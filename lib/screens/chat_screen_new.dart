@@ -5,7 +5,7 @@ class ChatScreenNew extends StatefulWidget {
   final bool isUser;
   final bool isAstrologer;
 
-  ChatScreenNew({required this.isUser, required this.isAstrologer});
+  const ChatScreenNew({super.key, required this.isUser, required this.isAstrologer});
 
   @override
   _ChatScreenNewState createState() => _ChatScreenNewState();
@@ -177,7 +177,7 @@ class ChatBubble extends StatelessWidget {
   final String message;
   final bool isUserMessage;
 
-  ChatBubble({required this.message, required this.isUserMessage});
+  const ChatBubble({super.key, required this.message, required this.isUserMessage});
 
   @override
   Widget build(BuildContext context) {

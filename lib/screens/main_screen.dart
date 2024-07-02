@@ -116,7 +116,7 @@ class _MainScreenState extends State<MainScreen> {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) =>
-                            ChatScreenNew(isUser: true, isAstrologer: false),
+                            const ChatScreenNew(isUser: true, isAstrologer: false),
                       ),
                     );
                   });

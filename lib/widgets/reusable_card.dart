@@ -43,7 +43,7 @@ class CustomCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 18.0,
                     ),

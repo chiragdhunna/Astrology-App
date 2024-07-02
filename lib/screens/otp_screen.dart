@@ -10,7 +10,7 @@ class OTP extends StatefulWidget {
   final int number;
   final String email;
 
-  OTP({super.key, required this.number, required this.email});
+  const OTP({super.key, required this.number, required this.email});
 
   @override
   State<OTP> createState() => _OTPState();
@@ -27,8 +27,8 @@ class _OTPState extends State<OTP> {
         .then((value) {
       Snacker(value.msg!, _messangerKey, context);
 
-      if (value.status == 200)
-        Future.delayed(Duration(seconds: 3), () {
+      if (value.status == 200) {
+        Future.delayed(const Duration(seconds: 3), () {
           if (widget.number == 1) {
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(
@@ -43,6 +43,7 @@ class _OTPState extends State<OTP> {
             );
           }
         });
+      }
     });
   }
 

@@ -2,6 +2,8 @@ import 'package:api/screens/chat_screen_new.dart';
 import 'package:flutter/material.dart';
 
 class ChatRequestInitiate extends StatefulWidget {
+  const ChatRequestInitiate({super.key});
+
   @override
   State<ChatRequestInitiate> createState() => ChatRequestInitiateState();
 }
@@ -15,7 +17,7 @@ class ChatRequestInitiateState extends State<ChatRequestInitiate> {
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) =>
-                ChatScreenNew(isUser: false, isAstrologer: true),
+                const ChatScreenNew(isUser: false, isAstrologer: true),
           ),
         );
       },

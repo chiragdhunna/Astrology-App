@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CallHistory extends StatefulWidget {
+  const CallHistory({super.key});
+
   @override
   _CallHistoryState createState() => _CallHistoryState();
 }
@@ -57,7 +59,7 @@ class _CallHistoryState extends State<CallHistory> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Image.asset(
                               'assets/esoteric.png', // Replace with your asset image path
                               width: 40,

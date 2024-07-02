@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AstroDashboard extends StatefulWidget {
+  const AstroDashboard({super.key});
+
   @override
   State<AstroDashboard> createState() => _AstroDashboardState();
 }
@@ -27,10 +29,10 @@ class _AstroDashboardState extends State<AstroDashboard> {
             // Handle menu button action
           },
         ),
-        title: Text('Astro Magic'),
+        title: const Text('Astro Magic'),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.notifications),
+            icon: const Icon(Icons.notifications),
             onPressed: () {
               // Handle notifications button action
             },
@@ -132,8 +134,8 @@ class _AstroDashboardState extends State<AstroDashboard> {
           Navigator.of(context).pushNamed('/chatRequest');
         },
         style: ElevatedButton.styleFrom(
-          primary: Colors.transparent,
-          onSurface: Colors.transparent,
+          backgroundColor: Colors.transparent,
+          disabledForegroundColor: Colors.transparent.withOpacity(0.38), disabledBackgroundColor: Colors.transparent.withOpacity(0.12),
           shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24),
@@ -146,7 +148,7 @@ class _AstroDashboardState extends State<AstroDashboard> {
             Align(
               alignment: Alignment.centerLeft,
               child: Padding(
-                padding: EdgeInsets.only(left: 16), // Adjust padding as needed
+                padding: const EdgeInsets.only(left: 16), // Adjust padding as needed
                 child: leadingWidget, // Use the conditionally chosen widget
               ),
             ),
@@ -167,7 +169,7 @@ class _AstroDashboardState extends State<AstroDashboard> {
                       Positioned(
                         right: 0,
                         child: Container(
-                          padding: EdgeInsets.all(2),
+                          padding: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(6),
@@ -371,7 +373,7 @@ class SliderButtonWidget extends StatefulWidget {
   final bool isOn;
   final Function(bool) onChanged;
 
-  SliderButtonWidget({required this.isOn, required this.onChanged});
+  const SliderButtonWidget({super.key, required this.isOn, required this.onChanged});
 
   @override
   _SliderButtonWidgetState createState() => _SliderButtonWidgetState();
